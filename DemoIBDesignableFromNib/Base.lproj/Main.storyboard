@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DemoIBDesignableFromNib" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="PyA-uw-Zhj" customClass="CustomView" customModule="CustomView">
+                                <rect key="frame" x="30" y="30" width="315" height="114.5"/>
+                                <color key="backgroundColor" red="0.14008827305029714" green="0.65316815322035104" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="motoko"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title">
+                                        <mutableString key="value">Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell</mutableString>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="contentModeAdapter">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="UwQ-i3-rhK" customClass="CustomView" customModule="CustomView">
+                                <rect key="frame" x="30" y="164" width="315" height="114.5"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="gundam"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title">
+                                        <string key="value">Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam </string>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="contentModeAdapter">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
+                                        <color key="value" red="0.14008827309999999" green="0.65316815319999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="PyA-uw-Zhj" secondAttribute="trailing" constant="30" id="4Oe-Be-lwZ"/>
+                            <constraint firstItem="PyA-uw-Zhj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9WR-C4-6R1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UwQ-i3-rhK" secondAttribute="trailing" constant="14" id="Aqu-DI-P1B"/>
+                            <constraint firstItem="PyA-uw-Zhj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="CYx-nh-REA"/>
+                            <constraint firstItem="PyA-uw-Zhj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="Z0z-BF-Ya7"/>
+                            <constraint firstItem="UwQ-i3-rhK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="e77-bz-R2v"/>
+                            <constraint firstItem="UwQ-i3-rhK" firstAttribute="top" secondItem="PyA-uw-Zhj" secondAttribute="bottom" constant="19.5" id="k85-8k-y6X"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="84.107946026986511"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gundam" width="150" height="112"/>
+        <image name="motoko" width="204" height="169"/>
+    </resources>
+</document>
