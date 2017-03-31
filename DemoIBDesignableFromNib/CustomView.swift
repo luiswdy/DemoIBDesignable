@@ -116,6 +116,7 @@ class CustomView: UIView {
     override func prepareForInterfaceBuilder() {
         debugPrint("\(#function)")
         super.prepareForInterfaceBuilder()
+//        setupUI()
     }
     
     override func layoutIfNeeded() {

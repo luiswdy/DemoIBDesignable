@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E971A3DC1E8E812900497F47 /* NibCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E971A3DB1E8E812900497F47 /* NibCustomView.xib */; };
+		E971A3DE1E8E816C00497F47 /* NibCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E971A3DD1E8E816C00497F47 /* NibCustomView.swift */; };
 		E97E99521E8E22BA00697E43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E99511E8E22BA00697E43 /* AppDelegate.swift */; };
 		E97E99541E8E22BA00697E43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97E99531E8E22BA00697E43 /* ViewController.swift */; };
 		E97E99571E8E22BA00697E43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E97E99551E8E22BA00697E43 /* Main.storyboard */; };
@@ -43,6 +45,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E971A3DB1E8E812900497F47 /* NibCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibCustomView.xib; sourceTree = "<group>"; };
+		E971A3DD1E8E816C00497F47 /* NibCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibCustomView.swift; sourceTree = "<group>"; };
 		E97E994E1E8E22BA00697E43 /* DemoIBDesignableFromNib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoIBDesignableFromNib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E97E99511E8E22BA00697E43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E97E99531E8E22BA00697E43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 				E97E99701E8E264700697E43 /* CustomView.h */,
 				E97E99671E8E22F500697E43 /* CustomView.swift */,
 				E97E99711E8E264700697E43 /* Info.plist */,
+				E971A3DB1E8E812900497F47 /* NibCustomView.xib */,
+				E971A3DD1E8E816C00497F47 /* NibCustomView.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -223,6 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E971A3DC1E8E812900497F47 /* NibCustomView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E97E997C1E8E265E00697E43 /* CustomView.swift in Sources */,
+				E971A3DE1E8E816C00497F47 /* NibCustomView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

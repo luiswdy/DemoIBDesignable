@@ -26,7 +26,6 @@
                                 <rect key="frame" x="30" y="30" width="315" height="114.5"/>
                                 <color key="backgroundColor" red="0.14008827305029714" green="0.65316815322035104" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="motoko"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="title">
                                         <mutableString key="value">Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell Ghost in shell</mutableString>
                                     </userDefinedRuntimeAttribute>
@@ -34,27 +33,20 @@
                                         <integer key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
+                                        <real key="value" value="57.25"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="motoko"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="UwQ-i3-rhK" customClass="CustomView" customModule="CustomView">
-                                <rect key="frame" x="30" y="164" width="315" height="114.5"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JBW-a1-1z0" customClass="NibCustomView" customModule="CustomView">
+                                <rect key="frame" x="26" y="154.5" width="323" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7pc-IS-E8E"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="9p2-9o-R2y"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="gundam"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="title">
-                                        <string key="value">Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam Gundam </string>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="contentModeAdapter">
-                                        <integer key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="titleColor">
-                                        <color key="value" red="0.14008827309999999" green="0.65316815319999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Test nib"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
@@ -62,13 +54,16 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="PyA-uw-Zhj" secondAttribute="trailing" constant="30" id="4Oe-Be-lwZ"/>
                             <constraint firstItem="PyA-uw-Zhj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9WR-C4-6R1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="UwQ-i3-rhK" secondAttribute="trailing" constant="14" id="Aqu-DI-P1B"/>
                             <constraint firstItem="PyA-uw-Zhj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="CYx-nh-REA"/>
+                            <constraint firstItem="JBW-a1-1z0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="EC6-S9-kHX"/>
+                            <constraint firstItem="JBW-a1-1z0" firstAttribute="top" secondItem="PyA-uw-Zhj" secondAttribute="bottom" constant="10" id="Vbe-Wc-dXc"/>
                             <constraint firstItem="PyA-uw-Zhj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="Z0z-BF-Ya7"/>
-                            <constraint firstItem="UwQ-i3-rhK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="e77-bz-R2v"/>
-                            <constraint firstItem="UwQ-i3-rhK" firstAttribute="top" secondItem="PyA-uw-Zhj" secondAttribute="bottom" constant="19.5" id="k85-8k-y6X"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JBW-a1-1z0" secondAttribute="trailing" constant="10" id="egy-vf-1eI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nibCustomView" destination="JBW-a1-1z0" id="8db-XU-57X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,7 +71,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="gundam" width="150" height="112"/>
         <image name="motoko" width="204" height="169"/>
     </resources>
 </document>
